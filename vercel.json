@@ -1,3 +1,7 @@
 {
-    "cleanUrls": true
-  }
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/pricing/:subdir*", "destination": "https://nexkhad-erp.vercel.app/:subdir*" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
